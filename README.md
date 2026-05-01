@@ -8,6 +8,20 @@ This treebank provides a Universal Dependencies (UD) annotation of post-Rabbinic
 
 The dataset consists of manually annotated sentences from historical Hebrew texts across genres and periods. The annotation follows UD v2 guidelines, with adaptations to account for differences in orthography, morphology, and syntax relative to modern Hebrew.
 
+# Text sources
+
+The treebank draws on a set of post-Rabbinic Hebrew texts spanning multiple genres and periods, listed below with their identifiers as they appear in the CoNLL-U metadata under each sentences "source" field.
+
+| English name    | CoNLL-U source name | Genre / description                       |
+| ------------------ | ------------------- | ----------------------------------------- |
+| Miscellaneous     | MiscCollection      | Mixed excerpts from various sources (legal, exegetical)       |
+| Igeret Orhot Olam  | אגרת_ארחות_עולם     | Geographical / cosmographical treatise    |
+| Sefer ha-Hinukh    | ספר_החינוך          | Commandments / halakhic-exegetical work   |
+| Sefer Maharil      | ספר_מהריל           | Ashkenazic customs and halakhic practices |
+| Rashi on the Torah | רשי_לתורה           | Biblical commentary                       |
+| Shulhan Arukh      | שולחן_ערוך          | Legal code (halakha)                      |
+
+
 # Acknowledgments
 
 This work has been funded by the European Union (ERC, MiDRASH, Project No. 101071829; Principal investigators: Nachum Dershowitz, Tel-Aviv University; Judith Olszowy-Schlanger, EPHEPSL; Avi Shmidman, Bar-Ilan University, and Daniel Stoekl Ben Ezra, EPHE-PSL), for which we are grateful. Views and opinions expressed are those of the authors only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.
