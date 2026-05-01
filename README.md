@@ -56,7 +56,7 @@ Data available since: UD v2.18
 License: CC BY-SA 4.0
 Includes text: yes
 Parallel: no
-Genre: legal,bible,poetry
+Genre: legal bible poetry
 Lemmas: manual native
 UPOS: manual native
 XPOS: manual native
