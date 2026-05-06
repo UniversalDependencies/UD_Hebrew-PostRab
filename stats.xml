@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>296</sentences><tokens>5288</tokens><words>8029</words><fused>2438</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>296</sentences><tokens>5288</tokens><words>8029</words><fused>2438</fused></test>
+  </size>
+  <lemmas unique="1312" /><!-- הוא, ו, ה, ב, ש, ל, על, לא, כל, מ, אין, זה, היה, אם, אמר -->
+  <forms unique="1935" /><!-- ו, ה, ב, ש, ל, לא, על, כל, מ, הוא, אם, אין, ם, הם, של -->
+  <fusions unique="1563" /><!-- לו, ולא, בו, שהוא, ואם, ואין, לה, שיש, שלא, וכל, שאין, בכל, הגט, והוא, עליו -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="13">
+    <tag name="ADJ">256</tag><!-- אחר, מותר, אסור, ברוך, גדול, קטן, ראשון, קדוש, טוב, כשר -->
+    <tag name="ADP">1197</tag><!-- ב, ל, על, מ, של, כ, מן, את, אחר, עד -->
+    <tag name="ADV">435</tag><!-- לא, אין, שם, הרי, כן, אף, אינו, גם, אפילו, כאן -->
+    <tag name="AUX">98</tag><!-- היה, צריך, יכל, עתיד, אמר, עשוי -->
+    <tag name="CCONJ">657</tag><!-- ו, או, אלא, אבל, אפילו, לכך, לפיכך, רק, הואיל, כיוון -->
+    <tag name="DET">636</tag><!-- ה, כל, שאר, הרבה, קצת, כמה, מקצת, רוב, מעט, שום -->
+    <tag name="INTJ">4</tag><!-- אמן, הבה, הנה -->
+    <tag name="NOUN">1819</tag><!-- יום, מקום, בית, יד, דבר, גט, שם, ראש, זמן, פה -->
+    <tag name="NUM">144</tag><!-- אחת, שתיים, שני, ארבע, עשרה, ד, שלוש, י, ראשון, א -->
+    <tag name="PRON">938</tag><!-- הוא, זה, מי, אלה, מה, עצמו, אותו, כך, הללו, הא -->
+    <tag name="PROPN">142</tag><!-- ישראל, ניסן, ה', מצרים, אברהם, נח, שם, אדם, הקב"ה, משה -->
+    <tag name="SCONJ">546</tag><!-- ש, אם, ד, אשר, כש, כדי, כי, ה, אילו, כיוון -->
+    <tag name="VERB">1157</tag><!-- אמר, נתן, יש, כתב, עשה, אין, קרא, בא, יצא, ידע -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="21">
+    <feat name="Definite" value="Def" upos="ADP">66</feat><!-- ב, ל, כ -->
+    <feat name="ExtPos" value="ADP" upos="ADJ">1</feat><!-- סמוך -->
+    <feat name="ExtPos" value="ADV" upos="ADP,DET,NOUN">6</feat><!-- אחר, כל, על, פנים, שתי -->
+    <feat name="ExtPos" value="SCONJ" upos="DET">1</feat><!-- כל -->
+    <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">967</feat><!-- ה, היא, ארץ, יד, זו, שנה, מעות, תורה, דרך, כנסת -->
+    <feat name="Gender" value="Fem,Masc" upos="AUX,NOUN,NUM,PRON,VERB">245</feat><!-- י, היו, אלו, נו, אני, אנו, יהיו, נהגו, הללו, ידעו -->
+    <feat name="Gender" value="Masc" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">2885</feat><!-- ו, הוא, ם, הם, זה, בית, מקום, אחד, יום, גט -->
+    <feat name="Mood" value="Imp" upos="VERB">20</feat><!-- צא, תן, חשוב, חתמו, המיתו, התהלך, חלל, כתבו, עשה, עשו -->
+    <feat name="Number" value="Dual" upos="NOUN,NUM">23</feat><!-- שני, שניה, שנים, שתי, שתים, תרין, אפיים, פעמים, שנתים -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">949</feat><!-- הם, ם, נו, בני, ימי, מעות, עדים, אומרים, היו, אלו -->
+    <feat name="Number" value="Sing" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">3158</feat><!-- ו, ה, הוא, זה, בית, י, מקום, אחד, יום, גט -->
+    <feat name="Person" value="1" upos="AUX,PRON,VERB">136</feat><!-- י, נו, אני, אנו, נ, ראיתי, אדרוש, אמרתי, אעשה, בינותי -->
+    <feat name="Person" value="1,2,3" upos="AUX,VERB">330</feat><!-- צריך, אומר, אומרים, אוכל, קורא, נותן, רוצה, יוצא, יכול, מגורשת -->
+    <feat name="Person" value="2" upos="PRON,VERB">68</feat><!-- ך, אתה, כם, צא, תן, חשוב, חתמו, נתפללת, אעש, אתם -->
+    <feat name="Person" value="3" upos="AUX,PRON,VERB">1306</feat><!-- ו, ה, הוא, ם, הם, זה, היה, היא, אמר, זו -->
+    <feat name="Reflex" value="Yes" upos="PRON">9</feat><!-- עצמו, עצמה, עצמן -->
+    <feat name="Tense" value="Fut" upos="AUX,VERB">206</feat><!-- יהיו, יכתוב, יקרא, יבא, יביא, יהא, יהיה, יבוא, יחזיר, ימכרו -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">390</feat><!-- היה, אמר, היו, נאמר, יצא, בא, היתה, נתנ, כתב, נתן -->
+    <feat name="Tense" value="Pres" upos="VERB">26</feat><!-- אוכל, כותבין, מוטל, אין, בא, גורע, חוצבו, חותך, יודעים, יוצא -->
+    <feat name="VerbForm" value="Inf" upos="AUX,VERB">170</feat><!-- ליתן, לעשות, לומר, להתפלל, לכתוב, להגיד, להניח, להפסיק, לילך, ללמוד -->
+    <feat name="VerbForm" value="Part" upos="ADJ,AUX,VERB">348</feat><!-- צריך, אומר, אומרים, אוכל, מגורשת, קורא, נותן, רוצה, הולך, יוצא -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="42">
+    <dep name="acl">12</dep>
+    <dep name="acl:relcl">186</dep>
+    <dep name="advcl">276</dep>
+    <dep name="advmod">335</dep>
+    <dep name="amod">95</dep>
+    <dep name="appos">62</dep>
+    <dep name="aux">28</dep>
+    <dep name="case">1124</dep>
+    <dep name="case:acc">3</dep>
+    <dep name="case:gen">4</dep>
+    <dep name="cc">625</dep>
+    <dep name="ccomp">123</dep>
+    <dep name="compound:redup">2</dep>
+    <dep name="compound:smixut">391</dep>
+    <dep name="compound:svc">8</dep>
+    <dep name="conj">559</dep>
+    <dep name="cop">64</dep>
+    <dep name="csubj">53</dep>
+    <dep name="dep">5</dep>
+    <dep name="det">651</dep>
+    <dep name="discourse">1</dep>
+    <dep name="dislocated">36</dep>
+    <dep name="fixed">154</dep>
+    <dep name="flat">33</dep>
+    <dep name="iobj">1</dep>
+    <dep name="mark">595</dep>
+    <dep name="nmod">114</dep>
+    <dep name="nmod:poss">259</dep>
+    <dep name="nmod:tmod">2</dep>
+    <dep name="nmod:unmarked">2</dep>
+    <dep name="nsubj">404</dep>
+    <dep name="nsubj:cop">138</dep>
+    <dep name="nsubj:outer">10</dep>
+    <dep name="nummod">78</dep>
+    <dep name="obj">367</dep>
+    <dep name="obl">791</dep>
+    <dep name="obl:tmod">5</dep>
+    <dep name="obl:unmarked">27</dep>
+    <dep name="orphan">13</dep>
+    <dep name="parataxis">26</dep>
+    <dep name="root">296</dep>
+    <dep name="xcomp">71</dep>
+  </deps>
+</treebank>
