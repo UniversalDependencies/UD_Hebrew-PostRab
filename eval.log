@@ -1,0 +1,62 @@
+Running the following version of UD tools:
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
+Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Tue May 5 17:01:41 2026 +0200
+Evaluating the following revision of UD_Hebrew-PostRab:
+commit dc04b9d8c94dfea873e2578b18d9c0d40af7e990
+Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Wed May 6 09:29:32 2026 +0200
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'he_postrab'
+Language code (from CoNLL-U file name) = 'he'
+Found the following data files: he_postrab-ud-test.conllu
+Size: counted 8029 of 8029 words (nodes).
+Size: min(0, log((N/1000)**2)) = 4.16611997440509.
+Size: maximum value 13.815511 is for 1000000 words or more.
+Split: Did not find more than 10000 training words.
+Split: Did not find at least 10000 development words.
+Split: Did not find at least 10000 test words.
+Lemmas: source of annotation (from README) factor is 1.
+Universal POS tags: 13 out of 17 found in the corpus.
+Universal POS tags: source of annotation (from README) factor is 1.
+Features: 4379 out of 8029 total words have one or more features.
+Features: source of annotation (from README) factor is 0.5.
+Universal relations: 30 out of 37 found in the corpus.
+Universal relations: source of annotation (from README) factor is 1.
+Genres: found 3 out of 18 known.
+/net/work/people/zeman/unidep/tools/validate.py --lang he --max-err=10 UD_Hebrew-PostRab/he_postrab-ud-test.conllu
+[Line 11 Sent 1]: [L3 WARNING pron-det-without-prontype] The word 'ה' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 24 Sent 2]: [L3 WARNING fixed-without-extpos] Fixed expression 'כיון ד' does not have the 'ExtPos' feature
+[Line 34 Sent 2]: [L3 WARNING fixed-without-extpos] Fixed expression 'אם כן' does not have the 'ExtPos' feature
+[Line 37 Sent 2]: [L3 WARNING pron-det-without-prontype] The word 'ה' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 56 Sent 3]: [L3 WARNING pron-det-without-prontype] The word 'הוא' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 60 Sent 3]: [L3 WARNING pron-det-without-prontype] The word 'ה' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 68 Sent 3]: [L3 WARNING pron-det-without-prontype] The word 'ה' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 88 Sent 4]: [L3 WARNING pron-det-without-prontype] The word 'כך' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 96 Sent 5]: [L3 WARNING pron-det-without-prontype] The word 'י' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 100 Sent 5]: [L3 WARNING pron-det-without-prontype] The word 'זה' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 105 Sent 5]: [L3 WARNING pron-det-without-prontype] The word 'ה' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 112 Sent 5]: [L3 WARNING fixed-without-extpos] Fixed expression 'משום ש' does not have the 'ExtPos' feature
+[Line 117 Sent 5]: [L3 WARNING pron-det-without-prontype] The word 'ה' is tagged 'DET' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 128 Sent 5]: [L3 WARNING fixed-without-extpos] Fixed expression 'על ידי' does not have the 'ExtPos' feature
+[Line 143 Sent 5]: [L3 WARNING fixed-without-extpos] Fixed expression 'על ידי' does not have the 'ExtPos' feature
+[Line 280 Sent 9]: [L3 WARNING fixed-without-extpos] Fixed expression 'כמו ש' does not have the 'ExtPos' feature
+[Line 576 Sent 21]: [L3 WARNING fixed-without-extpos] Fixed expression 'כאן ואילך' does not have the 'ExtPos' feature
+[Line 803 Sent 30]: [L3 WARNING fixed-without-extpos] Fixed expression 'כשם ש' does not have the 'ExtPos' feature
+[Line 818 Sent 30]: [L3 WARNING fixed-without-extpos] Fixed expression 'כדי ש' does not have the 'ExtPos' feature
+[Line 842 Sent 30]: [L3 WARNING fixed-without-extpos] Fixed expression 'כדי ש' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+Warnings: 1681
+*** PASSED ***
+Validity: 1
+(weight=0.111111111111111) * (score{features}=0.5) = 0.0555555555555556
+(weight=0.111111111111111) * (score{genres}=0.166666666666667) = 0.0185185185185185
+(weight=0.111111111111111) * (score{lemmas}=1) = 0.111111111111111
+(weight=0.37037037037037) * (score{size}=0.301553819305175) = 0.111686599742657
+(weight=0.0740740740740741) * (score{split}=0.01) = 0.000740740740740741
+(weight=0.111111111111111) * (score{tags}=0.764705882352941) = 0.0849673202614379
+(weight=0.111111111111111) * (score{udeprels}=0.810810810810811) = 0.0900900900900901
+(TOTAL score=0.472669936020111) * (availability=1) * (validity=1) = 0.472669936020111
+STARS = 2.5
+UD_Hebrew-PostRab	0.472669936020111	2.5
